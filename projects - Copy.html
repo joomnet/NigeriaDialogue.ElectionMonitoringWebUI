@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Nigeria Dialogue | Election Centre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+   <link href="dist/css/bootstrap-main.css" rel="stylesheet">
+	<link href="dist/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    
+	<link href="dist/css/jquery.noty.css" rel='stylesheet' />
+	<link href="dist/css/noty_theme_default.css" rel='stylesheet' />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+<div class="main-div"><span class="mainheader">ELECTION</span> <span class="mainheaderlight">CENTRE</span></div>
+<div class="main-menu"><a href="index.html" class="button">election results</a><a href="entry.html" class="button">election result entry</a><a href="projects.html" class="button">Donations & Projects</a></div>
+<div class="main-content">
+<div class="main-content-1"><span class="titleheader">donations &amp; projects</span></div>
+<div class="main-content-2">
+  <div class="box-content">
+	
+	<div class="row-fluid sortable">
+			<div class="box span8">
+				<div class="box-header well">
+					<h2><i class="icon-th"></i> Donations</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+						<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+						<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+					</div>
+				</div>
+				<div class="box-content">
+					<ul class="nav nav-tabs" id="myTab">
+						<li class="active"><a href="#donate">Donate</a></li>
+						<li><a href="#donors">Donors</a></li>
+					</ul>
+					 
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane active" id="donate">
+							<form class="form-horizontal">
+								<fieldset>
+								  <div class="control-group">
+									<label class="control-label">FirstName</label>
+									<div class="controls">
+									  <input type="text" class="input" id="firstname" >
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label">LastName</label>
+									<div class="controls">
+									  <input type="text" class="input" id="lastname" >
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label">Email</label>
+									<div class="controls">
+									  <input type="text" class="input-xlarge" id="email" >
+									</div>
+								  </div>
+								  <div class="control-group">
+									<label class="control-label">Amount</label>
+									<div class="controls">
+										<!--div class="input-prepend input-append">
+										<span class="add-on">£</span> -->
+										£<input id="amount" size="10" type="text">
+										<!--<span class="add-on">.00</span>-->
+									  </div>    
+									</div>
+								  </div>
+								  
+									<div class="form-actions">
+									<button  id='donate-button' class="btn btn-primary">Donate</button>
+									<button class="btn">Cancel</button>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="tab-pane" id="donors">
+							<table class="table table-striped table-bordered bootstrap-datatable datatable">
+							  <thead>
+								  <tr>
+									  <th>Donor</th>
+									  <th>Amount</th>
+									  <th>Date</th>                                     
+								  </tr>
+							  </thead>   
+							  <tbody>
+								<tr>
+									<td>Muhammad Usman</td>
+									<td class="center">200 NGN</td>
+									<td class="center">2012/01/01</td>      
+								</tr>
+								<tr>
+									<td>White Horse</td>
+									<td class="center"> 45 CHF</td>
+									<td class="center">2012/02/01</td>         
+								</tr>
+								<tr>
+									<td>Sheikh Heera</td>
+									<td class="center">78 NGN</td>
+									<td class="center">2012/02/01</td>         
+								</tr>
+								<tr>
+									<td>Saruar</td>
+									<td class="center">546 GBP</td>
+									<td class="center">2012/03/01</td>
+								</tr>
+								<tr>
+									<td>Sana Amrin</td>
+									<td class="center">354 USD</td>
+									<td class="center">2012/01/21</td>
+								</tr>                                   
+							  </tbody>
+							 </table>  
+							 <div class="pagination pagination-centered">
+							  <ul>
+								<li><a href="#">Prev</a></li>
+								<li class="active">
+								  <a href="#">1</a>
+								</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">Next</a></li>
+							  </ul>
+							</div>   
+						</div>
+					</div>
+				</div>
+			</div><!--/span-->
+					
+			<div class="box span4">
+				<div class="box-header well" data-original-title>
+					<h2><i class="icon-folder-open"></i> Projects</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+						<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+					</div>
+				</div>
+				<div class="box-content">
+					<div class="box-content">
+						<ul class="dashboard-list">
+							<li>
+								<a href="#">
+									<img class="dashboard-avatar" alt="Election Monitoring" src="images/thumbnails/electionmonitoring_50_x_50.png"></a>
+									<strong>Title:</strong> <a href="#">Election Monitoring
+								</a><br>
+								<strong>Budget:</strong> NGN 3,777,322.00<br>
+								<strong>Status:</strong> <span class="label label-success">Done</span>                                  
+							</li>
+							<li>
+								<a href="#">
+									<img class="dashboard-avatar" alt="Community Hub" src="images/thumbnails/home.png"></a>
+									<strong>Title:</strong> <a href="#"> Community Hub
+								</a><br>
+								<strong>Budget:</strong> NGN 4,034,756.00<br>
+								<strong>Status:</strong> <span class="label label-warning">Ongoing</span>                                 
+							</li>
+							<li>
+								<a href="#">
+									<img class="dashboard-avatar" alt="Mass Literacy" src="images/thumbnails/my_computer.png"></a>
+									<strong>Title:</strong> <a href="#">Mass Literacy
+								</a><br>
+								<strong>Budget:</strong> NGN 2,034,345.00<br>
+								<strong>Status:</strong> <span class="label label-important">Suspended</span>                                  
+							</li>
+							<li>
+								<a href="#">
+									<img class="dashboard-avatar" alt="Leadership Conference" src="images/thumbnails/nigeria.png"></a>
+									<strong>Title:</strong> <a href="#">Leadership Conference
+								</a><br>
+								<strong>Budget:</strong> NGN 23,434,567.00<br>
+								<strong>Status:</strong> <span class="label label-info">Comissioned</span>                                  
+							</li>
+							<li>
+								<strong>Total Donations:</strong> NGN 50,457,224.00<br>
+								<strong>Total Expenses:</strong> NGN 33,434,567.00<br>
+								<strong>Amount in coffers:</strong> <span class="blink">NGN 20,754,915.82</span>                                  
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!--/span-->
+	</div>
+  </div>
+</div>
+
+</div>
+
+<div id="main-div-footer"><span class="footertext">Nigeria Dialogue Initiative<br />
+          2013, All Rights Reserved.</span></div>
+         
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="dist/js/jquery-1.7.2.min.js"></script>
+    <!-- application script for electionmonitoring -->
+	<script type="text/javascript" src="dist/js/electionmonitoring.js"></script>
+    <!-- data table plugin -->
+	<script type="text/javascript" src="dist/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="dist/js/DT_bootstrap.js"></script>	
+	<!-- chart libraries start -->
+    <script type="text/javascript" src="dist/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="dist/highcharts/modules/exporting.js"></script>
+    <!-- chart libraries end -->    
+	<!-- notification plugin -->
+	<script type="text/javascript" src="dist/js/jquery.noty.js"></script>
+
+    <!-- Google MAP API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>         
+
+	<!-- library for creating tabs -->
+	<script type="text/javascript" src="dist/js/bootstrap-tab.js"></script>
+</body>
+</html>
