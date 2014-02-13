@@ -38,7 +38,7 @@ $(document).ready(function () {
                 data: vm,
                 success: function (result) {
                     Announce('Entered successfully', 'top', 'success', true, true);
-					alert('Entered successfully');
+					//alert('Entered successfully');
                 },
                 error : function () {
                     Announce('Error submitting result', 'center', 'error', true, false);
@@ -94,7 +94,7 @@ $(document).ready(function () {
 
 function getAPIURL()
 {
-    return  'http://www.roastthatmeat.co.uk/';
+    return  'http://www.roastthatmeat.co.uk';
 }
 
 function initializeLists() {
@@ -121,7 +121,11 @@ function initializeLists() {
                 }
                 if ($('#raceType').length) {
                     $.each(lists.RaceTypes, function (index, raceType) {
-                        $("#raceType").append('<option value="' + raceType.RaceTypeID + '" >' + raceType.Name + '</option>');
+						if ( index==0) {
+							$("#raceType").append('<option value="' + raceType.RaceTypeID + '" >' + raceType.Name + '</option>');
+						}else {
+							$("#raceType").append('<option value="' + raceType.RaceTypeID + '" >' + raceType.Name + '</option>');
+						}
                         $("#raceType").trigger('liszt:updated');
                     });
                 }
@@ -131,6 +135,7 @@ function initializeLists() {
                         $("#candidate").append('<option  value="' + candidate.CandidateID + '" >' + text + '</option>');
                         $("#candidate").trigger('liszt:updated');
                     });
+					$('#candidate').trigger("change");
                 }
                 if ($('#party').length) {
                     console.log(lists.Parties);
@@ -493,8 +498,7 @@ function populateResultTable(selectedRegionResult)
         "sSortAsc": "header headerSortDown",
         "sSortDesc": "header headerSortUp",
         "sSortable": "header",
-        //"sDom": "<'row-fluid'<'span4'l><'span4 center'>r><'row-fluid'<'span12 center't>><'row-fluid'<'span12 center'i>><'row-fluid'<'span12 center'p>>",
-		"sDom": "<'row-fluid'<'span4'l><'span4 center'>r>t<'row-fluid'<'span12 center'i>><'row-fluid'<'span12 center'p>>",
+        "sDom": "<'row-fluid center'rtip>",
         "iDisplayLength": '5'
     });        
 }
@@ -702,5 +706,14 @@ function Announce(text, layout, type, modal, timeout) {
         timeout: timeout
     });
     //alert(text);
+}
+
+function ReplaceNumberWithCommas(yourNumber) {
+    //Seperates the components of the number
+    var n= yourNumber.toString().split(".");
+    //Comma-fies the first part
+    n[0] = n[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    //Combines the two sections
+    return n.join(".");
 }
 

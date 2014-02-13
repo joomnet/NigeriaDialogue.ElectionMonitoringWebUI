@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -32,14 +33,13 @@
 			<form class="form-horizontal">
 				<fieldset>
                 <legend>Enter Election Result below</legend>				
-				<div class="control-group">
+				<!--<div class="control-group">
 					<label class="control-label" for="raceType">Category</label>
 					<div class="controls">
                         <select id="raceType" data-rel="chosen" >
-							<option value="">PRESIDENTIAL (Sample)</option>
 						</select>
 					</div>
-				</div>				
+				</div>	-->			
 				<div class="control-group">
 					<label class="control-label" for="race">Race</label>
 					<div class="controls">
@@ -80,7 +80,7 @@
 				<div class="control-group">
 					<label class="control-label" for="party">Party</label>
 					<div class="controls">
-                        <input class="input-large" id="party" type="text" value="" />
+                        <input class="input-xlarge" id="party" type="text" disabled='disabled' value="" />
 					</div>
 				</div>
 				<div class="control-group">
@@ -120,5 +120,12 @@
           2013, All Rights Reserved.</span></div>
          
 
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="dist/js/jquery-1.7.2.min.js"></script>
+	<!-- notification plugin -->
+	<script type="text/javascript" src="dist/js/jquery.noty.js"></script>
+    <!-- application script for electionmonitoring -->
+	<script type="text/javascript" src="dist/js/electionmonitoring.js"></script>
+	
 </body>
 </html>
